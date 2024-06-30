@@ -14,10 +14,11 @@
     "@mui/icons-material": "^5.15.21",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@mui/system": "^5.15.20",
-    "embla-carousel-react": "^8.1.5",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {

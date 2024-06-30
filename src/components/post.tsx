@@ -26,10 +26,15 @@ const Post = () => {
     const firstCharCreator = discriptionCreator.charAt(0)
     const isArabicCreator = regex.test(discriptionCreator)
 
+    const media = "/video1.mp4"
+    const imageRegex = new RegExp("[^\\s]+(.*?)\\.(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF)$")
+    const videoRegex = /\.(mp4|avi|mov|wmv|flv|mkv|webm|m4v|mpg|mpeg|3gp)$/i;
+    const isVideo = videoRegex.test(media)
+    const isImage = imageRegex.test(media)
     return (
 
-        <Box sx={{ padding: "15px" ,backgroundColor:"#242526", width:"100%", marginBottom:"10px",borderRadius:"13px"}}>
-            <Box display={"flex"} flexDirection={"row"} sx={{width:"100%"}}>
+        <Box sx={{ padding: "15px", backgroundColor: "#242526", width: "100%", marginBottom: "10px", borderRadius: "13px" }}>
+            <Box display={"flex"} flexDirection={"row"} sx={{ width: "100%" }}>
                 <Image
                     src="/imageTest.jpg"
                     alt="owner"
@@ -56,14 +61,28 @@ const Post = () => {
                 isArabic ? <p dir='rtl'>{discriptionSharer}</p> : <p dir='ltr'>{discriptionSharer}</p>
             }
 
-            <Image
-                alt='Mountains'
-                src='/test.jp'
-                width={500}
-                height={500}
-                style={{ width: '100%', height: 'auto' }}
-            />
-
+            {
+                isImage == true ?
+                    (<>
+                    <Image
+                        alt='Mountains'
+                        src={media}
+                        width={500}
+                        height={500}
+                        style={{ width: '100%', height: 'auto' }}
+                    />
+                    </>):
+                    isVideo == true ?
+                        (<video controls="true" autoplay="false" loop="true">
+                            <source 
+                                width={500}
+                                height={500}
+                                style={{ width: '100%', height: 'auto' }}
+                                src={media}
+                            />
+                        </video>) :
+                        <></>
+            }
             <Box display={"flex"} flexDirection={"row"}>
                 <Image
                     src="/imageTest.jpg"
@@ -73,7 +92,6 @@ const Post = () => {
                     style={{ borderRadius: "50%", clipPath: "circle()", marginRight: "15px" }}
                     quality={100}
                 />
-
                 <Box display={"flex"} flexDirection={"column"} justifyContent={"center"}>
                     <p style={{ fontWeight: "bold" }}>{creator}</p>
                     <p>{creatingTime}</p>
@@ -83,12 +101,12 @@ const Post = () => {
                 isArabicCreator ? <p dir='rtl'>{discriptionCreator}</p> : <p dir='ltr'>{discriptionCreator}</p>
             }
             <hr></hr>
-            <Box display={"flex"} justifyContent={"space-between"} sx={{marginTop:"7px"}} >
-                <Box> <ThumbUpOffAltIcon sx={{fontSize:35,marginLeft:"15px",marginRight:"10px"}}></ThumbUpOffAltIcon>Like</Box>
-                <Box><MapsUgcIcon sx={{fontSize:35,marginRight:"10px"}}> </MapsUgcIcon>Comment</Box>
-                <Box><ReplyAllIcon sx={{fontSize:35,marginRight:"10px"}}></ReplyAllIcon>Share</Box>
+            <Box display={"flex"} justifyContent={"space-between"} sx={{ marginTop: "7px" }} >
+                <Box> <ThumbUpOffAltIcon sx={{ fontSize: 35, marginLeft: "15px", marginRight: "10px" }}></ThumbUpOffAltIcon>Like</Box>
+                <Box><MapsUgcIcon sx={{ fontSize: 35, marginRight: "10px" }}> </MapsUgcIcon>Comment</Box>
+                <Box><ReplyAllIcon sx={{ fontSize: 35, marginRight: "10px" }}></ReplyAllIcon>Share</Box>
             </Box>
-                   
+
 
         </Box>
     )
