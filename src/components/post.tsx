@@ -64,19 +64,14 @@ const Post = () => {
             {
                 isImage == true ?
                     (<>
-                    <Image
-                        alt='Mountains'
+                    <img
                         src={media}
-                        width={500}
-                        height={500}
                         style={{ width: '100%', height: 'auto' }}
                     />
                     </>):
                     isVideo == true ?
                         (<video controls="true" autoplay="false" loop="true">
                             <source 
-                                width={500}
-                                height={500}
                                 style={{ width: '100%', height: 'auto' }}
                                 src={media}
                             />

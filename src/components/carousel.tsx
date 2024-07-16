@@ -7,7 +7,7 @@ function MultipleItems() {
     var settings = {
         dots: false,
         infinite: false,
-        speed: 1000,
+        speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1}
         const videos = ["video1.mp4", "video2.mp4", "video3.mp4", "video4.mp4", "video5.mp4", "video6.mp4", "video7.mp4"]
@@ -17,7 +17,7 @@ function MultipleItems() {
                 {
                     videos.map((video, index) => (
                         <div className='h-[50vh] rounded-md' >
-                            <video style={{ height: "50vh",objectFit:"cover", borderRadius:"15px"}}>
+                            <video style={{ height: "50vh",objectFit:"cover", borderRadius:"15px"}} paused>
                                 <source src={video} />
                             </video>
                         </div>

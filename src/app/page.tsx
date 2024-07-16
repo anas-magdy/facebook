@@ -2,16 +2,18 @@ import { Box } from "@mui/system";
 import Grid from '@mui/material/Grid';
 import Post from "@/components/post";
 import MultipleItems from "@/components/carousel";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <Navbar></Navbar>
       <Grid container spacing={2}>
         <Grid item md={3.5} sx={{display:{xs:"none",md:"grid"}}}  bgcolor={"#18191a"} color={"black"} style={{overflowY:"scroll", height:"100vh"}}>
           <p>anas</p>
         <p>anas</p><p>anas</p><p>anas</p><p>anas</p><p>anas</p><p>anas</p><p>anas</p>
         </Grid>
-        <Grid justifyContent={"center"} md={5} sx={{display:{xs:"grid"}}} bgcolor={"#18191a"} style={{overflowY:"scroll",overflowX:"hidden", height:"100vh",paddingLeft:"20px" }} >
+        <Grid justifyContent={"center"} md={5} sx={{display:{xs:"grid"}}} bgcolor={"#18191a"} style={{overflowY:"scroll",overflowX:"hidden", height:"100vh",paddingLeft:"20px",paddingTop:"70px" }} >
           
           <Post></Post>
           <Post></Post>
