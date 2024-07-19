@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import Grid from "@mui/material/Grid";
-import Post from "@/components/post";
+import Posts from "@/components/posts";
 import MultipleItems from "@/components/carousel";
 
 export default function Home() {
@@ -37,10 +37,9 @@ export default function Home() {
             paddingTop: "70px",
           }}
         >
-          <Post></Post>
-          <Post></Post>
+           <Posts></Posts>
           <MultipleItems></MultipleItems>
-          <Post></Post>
+         
         </Grid>
         <Grid
           item
