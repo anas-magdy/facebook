@@ -8,8 +8,10 @@ import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import MapsUgcIcon from '@mui/icons-material/MapsUgc';
 import ReplyAllIcon from '@mui/icons-material/ReplyAll';
 import Grid from '@mui/system/Unstable_Grid/Grid';
+import { useSelector,useDispatch } from 'react-redux';
 
 const watch = () => {
+    const profileData=useSelector((state)=>state.userProfileData);
     const sharer = "Anas Magdy";
     const sharingTime = "10 h";
     const discriptionSharer = "if it works it works"
@@ -112,9 +114,14 @@ const watch = () => {
                                     <Box><MapsUgcIcon sx={{ fontSize: 35, marginRight: "10px" }}> </MapsUgcIcon>Comment</Box>
                                     <Box><ReplyAllIcon sx={{ fontSize: 35, marginRight: "10px" }}></ReplyAllIcon>Share</Box>
                                 </Box>
+                            <div>
+                                {profileData.notificationNum}
+                                {profileData.profilePicture}
+                                {profileData.friendsNum}
+                                {profileData.userName}
+                                {profileData.userId}
+                            </div>
                             </Box>
-
-
                         )
 
                     })

@@ -64,9 +64,7 @@ const Posts = () => {
         };
     }, []);
 
-    return (
-        
-<>
+    return (<>
 {
     videos.map((video, index)=>{
         return(
@@ -139,11 +137,7 @@ const Posts = () => {
         )
     })
 }
-</>
- 
-        
-        
-    )
+</>)
 }
 
 export default Posts
