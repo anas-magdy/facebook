@@ -114,13 +114,6 @@ const watch = () => {
                                     <Box><MapsUgcIcon sx={{ fontSize: 35, marginRight: "10px" }}> </MapsUgcIcon>Comment</Box>
                                     <Box><ReplyAllIcon sx={{ fontSize: 35, marginRight: "10px" }}></ReplyAllIcon>Share</Box>
                                 </Box>
-                            <div>
-                                {profileData.notificationNum}
-                                {profileData.profilePicture}
-                                {profileData.friendsNum}
-                                {profileData.userName}
-                                {profileData.userId}
-                            </div>
                             </Box>
                         )
 
