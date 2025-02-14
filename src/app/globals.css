@@ -67,8 +67,11 @@ html
 .underLine:hover
 {
   text-decoration: underline;
+<<<<<<< HEAD
 }
 .react:hover{
   transition: all ease-in-out .5s;
   transform: scale(1.3);
+=======
+>>>>>>> 6cba6d863efc9dd94ff8aa69554708e3a5cf0263
 }
