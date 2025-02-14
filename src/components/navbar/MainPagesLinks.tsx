@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Box } from "@mui/material";
 const MainPagesLinks = () => {
   return (
-    <Box className="flex items-center justify-center gap-10 w-full" sx={{display:{xs:"none",sm:"flex"}}}>
+    <Box className="flex items-center justify-center gap-10 w-full" sx={{display:{xs:"none",md:"flex"}}}>
       <Link href={"/"} className="mainIcon" style={{width:"100px",display:"flex",justifyContent:"center" ,height:"100%",alignItems:"center",borderRadius:"10px"}}>
         {" "}
         <HomeRoundedIcon style={{fontSize:"35px"}} />

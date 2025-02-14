@@ -68,3 +68,7 @@ html
 {
   text-decoration: underline;
 }
+.react:hover{
+  transition: all ease-in-out .5s;
+  transform: scale(1.3);
+}

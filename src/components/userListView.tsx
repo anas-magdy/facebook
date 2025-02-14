@@ -2,28 +2,19 @@
 import CancelIcon from '@mui/icons-material/Cancel';
 import Grid from "@mui/material/Grid2";
 import Image from 'next/image';
+import ProfileImage from './profileImage';
+import TextDirectionHandeler from './textDirectionHandeler';
 
 const UserListView = () => {
     return (
-        <Grid container spacing={2} margin={"2px"} padding={"5px"} borderRadius={"15px"} className={"mainIcon"}>
+        <Grid container  marginBottom={"2px"} padding={"5px"} borderRadius={"15px"} className={"mainIcon"}>
             <Grid  size={2}>
-                <Image
-                    alt="User Profile Pic"
-                    width={"100"}
-                    height={"100"}
-                    className="rounded-full object-cover h-10 w-10"
-                    src={"/user-avatar-placeholder.jpg"}
-                />
+                 <ProfileImage></ProfileImage>  
             </Grid>
-
-            <Grid size={9}>user Name</Grid>
-            <Grid size={1}>
-                <CancelIcon></CancelIcon>
+            <Grid size={9}>
+                <TextDirectionHandeler text={"Anas Magdy "}></TextDirectionHandeler>
             </Grid>
         </Grid>
-
-
     )
 }
-
 export default UserListView

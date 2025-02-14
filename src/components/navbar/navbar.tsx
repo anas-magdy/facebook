@@ -17,7 +17,7 @@ function Navbar() {
           <NavSearch />
         </div>
         
-        
+         
         <MainPagesLinks />
       
      

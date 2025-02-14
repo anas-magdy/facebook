@@ -101,12 +101,12 @@ const FriendSuggestion = () => {
                   <Typography variant="body2">
                       30  mutual friend 
                   </Typography>
-                  <CardActions>
+                  
                     {/* endIcon={<PeopleAltIcon /> } */}
-                    <Button variant="contained">
+                    <Button variant="contained" sx={{margin:"0px"}}>
                       Add Friend
                     </Button>
-                  </CardActions>
+
                 </CardContent>
             </Card>
         </div>

@@ -3,6 +3,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ProfileImage from '@/components/profileImage'
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -29,9 +30,9 @@ function Storys() {
     var settings = {
         dots: false,
         infinite: false,
-        speed: 1000,
-        slidesToShow: 4.5,
-        slidesToScroll: 4,
+        speed: 700,
+        slidesToShow: 3.5,
+        slidesToScroll: 3,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -44,7 +45,7 @@ function Storys() {
           {
             breakpoint: 900,
             settings: {
-              slidesToShow: 4.5,
+              slidesToShow: 3.5,
             }
           },   
           {
@@ -85,7 +86,7 @@ function Storys() {
                 <source src={video} />
               </video>
               <div style={{position:"absolute", top:"10px", left:"10px"}}>
-                    <img src={"/user-avatar-placeholder.jpg"} className="rounded-full object-cover h-10 w-10" style={{border:"3px solid #26b2f3"}}/>             
+                <ProfileImage></ProfileImage>          
               </div>
               <h6 style={{position:"absolute", bottom:"10px", left:"10px"}}>
                 Anas Magdy
