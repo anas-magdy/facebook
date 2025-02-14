@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -14,7 +14,7 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} 
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -62,16 +62,12 @@ html
 .story:hover{
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
 }
 .underLine:hover
 {
   text-decoration: underline;
-<<<<<<< HEAD
 }
 .react:hover{
   transition: all ease-in-out .5s;
   transform: scale(1.3);
-=======
->>>>>>> 6cba6d863efc9dd94ff8aa69554708e3a5cf0263
 }

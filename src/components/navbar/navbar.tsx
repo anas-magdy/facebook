@@ -17,11 +17,7 @@ function Navbar() {
           <NavSearch />
         </div>
         
-<<<<<<< HEAD
          
-=======
-        
->>>>>>> 6cba6d863efc9dd94ff8aa69554708e3a5cf0263
         <MainPagesLinks />
       
      

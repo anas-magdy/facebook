@@ -3,10 +3,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-<<<<<<< HEAD
 import ProfileImage from '@/components/profileImage'
-=======
->>>>>>> 6cba6d863efc9dd94ff8aa69554708e3a5cf0263
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -33,15 +30,9 @@ function Storys() {
     var settings = {
         dots: false,
         infinite: false,
-<<<<<<< HEAD
         speed: 700,
         slidesToShow: 3.5,
         slidesToScroll: 3,
-=======
-        speed: 1000,
-        slidesToShow: 4.5,
-        slidesToScroll: 4,
->>>>>>> 6cba6d863efc9dd94ff8aa69554708e3a5cf0263
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -54,11 +45,7 @@ function Storys() {
           {
             breakpoint: 900,
             settings: {
-<<<<<<< HEAD
               slidesToShow: 3.5,
-=======
-              slidesToShow: 4.5,
->>>>>>> 6cba6d863efc9dd94ff8aa69554708e3a5cf0263
             }
           },   
           {
@@ -99,11 +86,7 @@ function Storys() {
                 <source src={video} />
               </video>
               <div style={{position:"absolute", top:"10px", left:"10px"}}>
-<<<<<<< HEAD
                 <ProfileImage></ProfileImage>          
-=======
-                    <img src={"/user-avatar-placeholder.jpg"} className="rounded-full object-cover h-10 w-10" style={{border:"3px solid #26b2f3"}}/>             
->>>>>>> 6cba6d863efc9dd94ff8aa69554708e3a5cf0263
               </div>
               <h6 style={{position:"absolute", bottom:"10px", left:"10px"}}>
                 Anas Magdy
